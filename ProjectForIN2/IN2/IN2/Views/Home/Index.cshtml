@@ -1,0 +1,31 @@
+﻿@model IEnumerable<IN2.Models.STUDENT>
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="panel panel-primary">
+    <div class="panel-heading">Students</div>
+    <table class="table table-striped">
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Ime i Prezime
+            </th>
+        </tr>
+        @foreach (var s in Model)
+        {
+            <tr>
+                <td>
+                    @s.StudentID
+                </td>
+                <td>
+                    @s.ImePrezime
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+

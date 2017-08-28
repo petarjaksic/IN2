@@ -240,3 +240,5 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/ProjectForIN2/IN2/IN2/testIN2/
+/ProjectForIN2/IN2/IN2/test/
